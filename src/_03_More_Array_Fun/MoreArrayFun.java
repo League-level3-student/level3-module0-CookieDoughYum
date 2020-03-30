@@ -27,7 +27,8 @@ public class MoreArrayFun {
 	//   in reverse order.
 	static void ReversePrint() {
 		String[] array = {"cat", "dog", "hamster", "snake"};
-	      for(int i=4; i>array.length; i--) {
+	      for(int i=array.length-1; i>=0; i--) {
+	    	
 	    	  System.out.println(array[i]);
 	      }
 	}
@@ -35,7 +36,8 @@ public class MoreArrayFun {
 	
 	//4. Write a method that takes an array of Strings and prints every other String in the array.
 	static void OddPrint() {
-		String[] array = {"cat", "dog", "hamster", "snake"};
+		String[] array = {"cat", "dog"
+				+ "", "hamster", "snake"};
 	      for(int i=0; i<array.length; i++) {
 	    	  if(i%2==0) {
 	    	  System.out.println(array[i]);
@@ -47,7 +49,7 @@ public class MoreArrayFun {
 	//   in a completely random order. Almost every run of the program should result in a different orde
 	static void RandomPrint() {
 	String[] s = {"cat", "dog", "hamster", "snake"};
-	ArrayList<String> list= new ArrayList<String>(Arrays.asList(citynames));
+	ArrayList<String> list= new ArrayList<String>(Arrays.asList(s));
 	Random r = new Random();
 
 	while(list.size()>0){
